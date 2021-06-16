@@ -33,11 +33,11 @@ import router from "@/router/router";
 
 export default {
   name: "Navbar",
-  methods:{
-    goTo(){
+  methods: {
+    goTo() {
       router.push("/");
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -49,7 +49,7 @@ export default {
 
 nav {
   overflow: hidden;
-  background-color: rgb(5,38,64);
+  background-color: rgb(5, 38, 64);
   position: fixed;
   top: 0;
   left: 0;
@@ -62,11 +62,12 @@ nav {
     padding: 30px;
     #left-items {
       float: left;
-      padding-bottom:30px;
+      padding-bottom: 30px;
     }
     #right-items {
       float: right;
-      padding-bottom:30px;
+      padding-bottom: 30px;
+      visibility: visible;
     }
     li {
       display: inline;
@@ -77,6 +78,7 @@ nav {
         text-decoration: none;
         padding: 20px;
         img {
+          cursor: pointer;
           width: 200px;
           float: left;
         }
@@ -84,8 +86,24 @@ nav {
     }
   }
 }
-
 .content {
   text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  #right-items {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+  nav ul li{
+    font-size:15px;
+    a{
+      padding:10px;
+    }
+  }
 }
 </style>
