@@ -13,7 +13,7 @@
           v-model="query"
           @keyup="getResult(query)"
         />
-        <button type="submit">Search</button>
+        <button type="submit" id="search-button">Search</button>
       </form>
     </div>
   </div>
@@ -227,6 +227,14 @@ h2 {
     color: grey;
     margin-top: -10px;
     font-weight: 100;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #search-button{
+    visibility: hidden;
+  }
+  .hero-title{
+    margin-right:40px;
   }
 }
 </style>

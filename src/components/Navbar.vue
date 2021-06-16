@@ -95,14 +95,15 @@ nav {
     visibility: hidden;
     clear: both;
     float: left;
-    margin: 10px auto 5px 20px;
-    width: 28%;
     display: none;
   }
-  nav ul li{
-    font-size:15px;
-    a{
-      padding:10px;
+  nav ul li {
+    font-size: 15px;
+    a {
+      padding: 10px;
+      img {
+        width: 100px;
+      }
     }
   }
 }
