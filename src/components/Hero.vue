@@ -192,6 +192,9 @@ h2 {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
+  img:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
+  }
   p {
     width: 200px;
     white-space: normal;

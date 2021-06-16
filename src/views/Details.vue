@@ -106,7 +106,6 @@ export default {
     font-weight: 100;
   }
   .overview{
-    position: absolute;
     width: 1000px;
     top: 600px;
     left: 500px;
