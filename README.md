@@ -1,6 +1,6 @@
 # tmdb-task
 
-Live demo at: https://tmdb-task.herokuapp.com
+Live demo:  https://tmdb-task.herokuapp.com
 
 ## Project setup
 ```
